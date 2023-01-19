@@ -1,0 +1,390 @@
+body{
+    background: #fff;
+    
+    }
+    
+    
+    .content-center{
+        width: 1190px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .left{
+        float: left;
+        width: 50%;
+        height: 606px;
+        border-color: pink;
+    }
+    .right{
+        /* 不用设置宽度，这是自适应布局 */
+        margin-left: 595px;
+        background: #fff;
+        height: 606px;
+        width: 595px;
+    
+    
+    }
+    .logo{
+        margin-left: 0;
+        width: 130px;
+        height: 47px;
+        /* 是块级元素 */
+    }
+    .logo img{
+        width: 130px;
+        height: 47px;
+    }
+    .run{
+    margin-top: 47px;
+    background:white;
+    text-align: center;
+    font-size: 0;
+    line-height: 512px;
+    height: 512px;
+    }
+    .run img{
+        width: 563px;
+        height: 453px;
+    vertical-align: middle;
+    }
+    
+    
+    
+    
+    
+    /* .login-card{
+    width: 378px;
+    height: 516px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    }
+    .qiehuan{
+        width: 100%;
+        height: 10%;
+        background-color: pink;
+        
+       
+    }
+    .text-content{
+        width: 100%;
+        height: 10%;
+        font-size: 23px;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    .erweima{
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        margin: 0 auto;
+        position: relative;
+       
+    }
+    .erweima img{
+        width: 100%;
+        height: 100%;
+    } */
+    /* 采用flex弹性布局 */
+    .right{
+        /* 设置主轴方向 */
+        display: flex;
+        /* 在主轴居中对齐 */
+        justify-content: center;
+        /* 在副轴居中对齐 */
+        align-items: center;
+    }
+    
+    
+    .login-card{
+    
+        width: 378px;
+        height: 516px;
+        background: #fff;
+        /* 设置主轴方向 */
+        display: flex;
+        flex-direction: column;
+        /* 在主轴居中对齐
+        justify-content: center; */
+        /* 在副轴居中对齐 */
+        align-items: center;
+        position: relative;
+        /* 把Inset删除，默认就是outset */
+        box-shadow: 1px 1px 20px rgb(224, 222, 222);
+        position: relative;
+    
+    }
+    .text-content{
+        font-size: 22px;
+        width: 100%;
+        height: 60px;
+        color: black;
+        text-align: center;
+        line-height: 60px;
+        margin-top: 33px;
+    }
+    .erweima img{
+        width: 200px;
+        height: 200px;
+    }
+    .shuoming{
+        position: relative;
+        margin-top: 3px;
+        font-size: 21px;
+        color: #666;
+        font-weight: 400;
+    
+    }
+    .shuoming img{
+        position: absolute;
+        top: 3px;
+        left: 43px;
+        width: 22px;
+        height: 22px;
+    }
+    .shuoming .f{
+        width: 12px;
+        height: 19px;
+        display: inline-block;
+    }
+    .tongyi {
+        margin-top: 20px;
+        color: #666;
+    
+    }
+    .tongyi a{
+        color: #FFC300;
+    }
+    .zhanghao{
+        width: 80%;
+        height: 93px;
+        text-align: center;
+        line-height: 93px;
+        margin-top: 20px;
+        font-size: 25px;
+        border-top: #ccc dashed 1px;
+        color: #666;
+    
+    }
+    .qiehuan,.qiehuan2{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+    .qiehuan img{
+        width: 60px;
+        height: 60px;
+    }
+    .qiehuan2 img{
+        width: 60px;
+        height: 60px;
+    }
+    /* flex只对亲爸爸和亲儿子作用 */
+    .footer-p1,.footer-p2{
+        margin: 0 auto;
+        width: 1190px;
+        height: 60px;
+        border-top: rgb(231, 228, 228) 0.5px solid;
+        display: flex;
+        align-items: center;
+    }
+    .footer-p1 ul{
+        display: flex;
+    
+    
+    }
+    .footer-p1 li{
+    
+        border-right: 1px solid #8c8c8c;;
+        padding: 0 18.2px;
+        font-size: 14px;
+        color: #ccc;
+        color: #8c8c8c;
+    }
+    .footer-p1 li:hover{
+        color: #FFC300;
+    }
+    .footer-p1 li:last-child{
+        border: 0px;
+    }
+    .footer-p2{
+        color: #8c8c8c;
+        font-size: 14px;
+    }
+    /* .outer{
+        width: 100%;
+        
+        z-index: 100;
+        
+    } */
+    .mask{
+        background-color: rgba(234, 231, 231, 0.703);
+        background: rgba(255, 255, 255, 0.90196);
+        width: 180px;
+        height: 178px;
+        position: absolute;
+        top: 102px;
+        left: 98px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+    
+    
+    }
+    .mask button{
+       position: absolute;
+       top: 76px;
+       left: 46px;
+        width: 88px;
+        margin: 12px auto;
+        height: 36px;
+        line-height: 36px;
+        background: #ffd100;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #222222;
+        text-align: center;
+        font-weight: 400;
+        border: none;
+    
+    }
+    .mask p{
+        position: absolute;
+        top: 53px;
+        left: 43px;
+    }
+    
+    .loading-outer{
+        display: block;
+    }
+    .loading-outer2{
+        display: none;
+    }
+    .login-card2{
+        width: 378px;
+        height: 516px;
+        background: #fff;
+        /* 设置主轴方向 */
+        display: flex;
+        flex-direction: column;
+        /* 在主轴居中对齐
+        justify-content: center; */
+        /* 在副轴居中对齐 */
+        align-items: center;
+        position: relative;
+        /* 把Inset删除，默认就是outset */
+        box-shadow: 1px 1px 20px rgb(224, 222, 222);
+        position: relative;
+    }
+    .select{
+        width: 80%;
+        height: 50px;
+        margin-top: 55px;
+    }
+    .select span{
+        display: inline-block;
+        width: 48%;
+        height: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    
+    }
+    .boder{
+        border-bottom: 2px solid #FFC300;
+    }
+    .kuang{
+        position: relative;
+        width: 80%;
+        height: 40%;
+        margin-top: -14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .kuang input{
+        margin: 0 auto;
+    
+        width: 90%;
+        height: 25%;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        padding-left: 10px;
+        cursor:auto;
+        font-size: 20px;
+        color: #ccc;
+        font-weight: 400;
+    }
+    .get{
+        position: absolute;
+        left: 145px;
+        top: 116px;
+        border: none;
+        color: #ccc;
+        font-size: 20px;
+        color: #ccc;
+        font-weight: 400;
+        background-color: white;
+    }
+    .loginbtn{
+        background-color: #ffd100;
+        width: 80%;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        margin-top: -18px;
+        display: block;
+        height: 50px;
+        color: #222222;
+        line-height: 50px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        /* 不可选，if值是auto是可复制 */
+        -webkit-user-select: none;
+        /* 禁止选择文字 */
+        -moz-user-select: none;
+    
+        -ms-user-select: none;
+        /* 禁止选择文字 */
+    
+        user-select: none;
+        background-color: #ffd100;
+        border-radius: 6px;
+    }
+    .agree{
+        width: 80%;
+        border-top: 1px dashed #ccc;
+        margin-top: 37px;
+        font-size: 14px;
+        color: #666666;
+        line-height: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    
+    }
+    .agree a{
+        color: #FFC300;
+    }
+    .forget{
+        color: #ffd100;
+        position: absolute;
+        bottom: 26px;
+        right: 16px;
+    
+    }
+    
+    .active{
+        display: none;
+    }
