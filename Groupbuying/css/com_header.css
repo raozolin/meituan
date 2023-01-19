@@ -1,0 +1,207 @@
+/* 头部导航 */
+
+.nav{
+    height: 40px;
+    background: #F8F8F8;
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    height: 40px;
+}
+.nav-center{
+    width: 1190px;
+    height: 40px;
+    background: #F8F8F8;
+    margin: 0 auto;
+    padding-top: 2px;
+}
+.icon-location2{
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+.nav a{
+    color: #999;
+}
+.nav-center button{
+    float: left;
+    margin-top: 8px;
+    margin-left: 2px;
+    font-size: 12px;
+    height: 19px;
+}
+.other,.login,.zhuce{
+    float: left;
+    display: block;
+}
+.other{
+    margin-top: 8px;
+    margin-left: 2px;
+}
+.login {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 38px;
+    
+}
+.login a{
+    color: #FE8C00;
+}
+
+.zhuce{
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+
+.mine li{
+    float: right;
+    height: 100px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    width: 65px;
+    position: relative;
+}
+/* 小计，这里因为浮动的影响，导致挤压其他浮动的元素，所以要用上定位和z-index */
+.di1 dl{
+    background-color: #FE8C00;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 200;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    
+}
+.di2 dl{
+    background-color: #FE8C00;
+    width: 110px;
+    position: absolute;
+    right: -2px;
+    z-index: 300;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    
+}
+.di3 dl{
+    background-color: #FE8C00;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 200;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    
+}
+.mine-nav{
+    width: 1190px;
+    z-index: 200;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 360px;
+    position: absolute;
+    right: -2px;
+    display: none;
+}
+.traval{
+    background-color: white;
+   
+    width: 30%;
+    height: 100%;
+    float: left;
+
+}
+.food{
+    background-color: white;
+
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.lookmovie{
+    background-color: white;
+    width: 17%;
+    height: 100%;
+    float: left;
+}
+.APP{
+    background-color: white;
+    width: 33%;
+    height: 100%;
+    float: left;
+
+}
+.mine-nav h4{
+color: #1d160d;
+font-size: 17px;
+}
+
+.traval li{
+    color: #999;
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+
+.food li{
+    color: #999;
+    width: 90px;
+    height: 100%;
+    float: left;
+}
+
+.lookmovie li{
+    width: 100%;
+    height: 100%;
+    color: #999;
+    float: left;
+}
+.APP img{
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+
+
+/* 这是鼠标滑过时，每个Li的标题的样式改变 */
+.mine-h-add{
+border: 1px solid #ccc;
+border-bottom: none;
+color: #FE8C00 !important;
+width:65px;
+background-color: #fff;
+}
+
+.traval p:hover{
+    color: #FE8C00;
+}
+
+.food p:hover{
+    color: #FE8C00;
+}
+.lookmovie p:hover{
+    color: #FE8C00;
+}
+
+
+.di3 a:hover{
+    color: #FE8C00;
+}
+.di2 a:hover{
+    color: #FE8C00;
+}
+.di1 a:hover{
+    color: #FE8C00;
+}
